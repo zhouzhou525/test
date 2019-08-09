@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <h1>App</h1>
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  created() {
+    console.log("App is created")
+  }
+};
+</script>
 
 <style>
 #app {
